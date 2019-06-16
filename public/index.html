@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mous</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="all-content">
+      <header class="header">
+        <div class="site-wrap header__container">
+          <nav class="main-nav">
+            <button class="main-nav__close" js-trigger="nav-toggle"></button>
+            
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Link 1</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Link 2</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Link 3</a></li>
+            </ul>
+          </nav>
+
+          <button class="header__burger" js-trigger="nav-toggle"></button>
+
+          <a class="header__logo" href="/">
+            <img src="./img/logo.svg" alt="Mous logo">
+          </a>
+
+          <button class="header__cart"></button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="site-wrap">
+          <section class="slideshow">
+            <div class="slideshow__container" js-slideshow-container>
+              <div class="slideshow__slide" js-slideshow-slide>
+                <img class="slideshow__img" src="./img/slideshow-1.png">
+
+                <div class="slideshow__content">
+                  <h2 class="slideshow__title">Explore Limitless 2.0</h2>
+                  <h3 class="slideshow__subtitle">People Inspired Phone Protection</h3>
+                  <a class="slideshow__button" href="#">See In Store</a>
+                </div>
+              </div>
+
+              <div class="slideshow__slide" js-slideshow-slide>
+                <img class="slideshow__img" src="./img/slideshow-2.png">
+
+                <div class="slideshow__content">
+                  <h2 class="slideshow__title">Explore Limitless 3.0</h2>
+                  <h3 class="slideshow__subtitle">People Inspired Phone Protection</h3>
+                  <a class="slideshow__button" href="#">See In Store</a>
+                </div>
+              </div>
+
+              <div class="slideshow__slide" js-slideshow-slide>
+                <img class="slideshow__img" src="./img/slideshow-3.png">
+                
+                <div class="slideshow__content">
+                  <h2 class="slideshow__title">Explore Limitless 4.0</h2>
+                  <h3 class="slideshow__subtitle">People Inspired Phone Protection</h3>
+                  <a class="slideshow__button" href="#">See In Store</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="featured-products">
+            <div class="featured-products__pod featured-products__pod--1">
+            </div>
+            <div class="featured-products__pod featured-products__pod--2">
+            </div>
+            <div class="featured-products__pod featured-products__pod--3">
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="site-wrap">
+          <ul class="footer__list">
+            <li class="footer__title">About Mous</li>
+
+            <li class="footer__item"><a href="#" class="footer__link">iPhone Cases</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Samsung Cases</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Reviews</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Student Discount</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Shipping & Delivery</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__title">Support</li>
+
+            <li class="footer__item"><a href="#" class="footer__link">Help & Contact</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Tutorials</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Warranty</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+          </ul>
+
+          <div class="footer__signup newsletter-signup">
+            <div class="footer__title">Join our newsletter</div>
+
+            <form action="POST" class="newsletter-signup__form">
+              <input type="email" class="newsletter-signup__input">
+              <button class="newsletter-signup__submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>

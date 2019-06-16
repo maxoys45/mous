@@ -1,0 +1,13 @@
+/**
+ * COMPONENT: FOOTER
+ *
+ */
+.footer {
+  background-color: $COLOR_BLACK;
+  color: $COLOR_WHITE;
+  padding: 2rem 0;
+
+  @include bp($SCR_LARGE) {
+    padding: 4rem 0;
+  }
+}

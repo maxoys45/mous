@@ -1,0 +1,46 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: $COLOR_WHITE;
+
+  .nav-open & {
+    overflow: hidden;
+    
+    &::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: $LAYER_BASE;
+      background-color: $COLOR_BLACK;
+      opacity: 0.5;
+    }
+  }
+}
+
+.site-wrap {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 1rem;
+
+  @include bp($SCR_MEDIUM) {
+    padding: 0 2rem;
+  }
+
+  @include bp($SCR_LARGE) {
+    max-width: 1360px;
+    padding: 0 4rem;
+  }
+}
+
+.main {
+  @include bp($SCR_MEDIUM, max-width) {
+    padding-top: 7.4rem;
+  }
+}

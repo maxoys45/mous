@@ -1,0 +1,46 @@
+/**
+ * COMPONENT: FEATURED PRODUCTS
+ *
+ */
+.featured-products {
+  margin-bottom: 2rem;
+
+  @include bp($SCR_MEDIUM) {
+    margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(2, 38rem);
+    grid-gap: 2rem;
+    grid-template-areas:
+      'one two'
+      'one three';
+  }
+
+  &__pod {
+    background-color: $COLOR_GREY;
+    
+    @include bp($SCR_MEDIUM, max-width) {
+      padding-top: percentage(9 / 16);
+
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @include bp($SCR_SMALL, max-width) {
+      padding-top: 100%;      
+    }
+
+    &#{&}--1 {
+      grid-area: one;
+    }
+
+    &#{&}--2 {
+      grid-area: two;
+    }
+
+    &#{&}--3 {
+      grid-area: three;
+    }
+  }
+}

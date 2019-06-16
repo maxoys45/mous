@@ -1,0 +1,62 @@
+/**
+ * COMPONENT: HEADER
+ *
+ */
+.header {
+  @include bp($SCR_MEDIUM, max-width) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $COLOR_WHITE;
+    z-index: $LAYER_FIXED_HEADER;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: {
+      top: 2rem;
+      bottom: 2rem;
+    }
+
+    @include bp($SCR_LARGE) {
+      padding: {
+        top: 5rem;
+        bottom: 7rem;
+      }
+    }
+  }
+
+  &__burger {
+    @include icomoon(icon-menu);
+    font-size: 2.4rem;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    img {
+      width: 100%;
+      max-width: 10rem;
+    }
+    
+    @include bp($SCR_LARGE) {
+      margin-top: -1rem;
+
+      img {
+        max-width: 20rem;
+      }
+    }
+  }
+
+  &__cart {
+    @include icomoon(icon-cart);
+    font-size: 2.4rem;
+  }
+}
