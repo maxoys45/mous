@@ -7,9 +7,6 @@
  */
 import Flickity from 'flickity';
 
-import {log} from '../incs/utils';
-import cssClasses from '../incs/cssClasses';
-
 /**
  * Global variables
  */
