@@ -1,3 +1,3 @@
 # Mous
 
-# Run gulp watch to build the asset files
+Run gulp watch to build the asset files
